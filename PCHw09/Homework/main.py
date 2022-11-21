@@ -13,7 +13,7 @@ def input_error(func):
 
 def main():
     while True:
-        user_text = input()
+        user_text = input("Введите текст команды: ")
         command, user_data = refactor_user_text(user_text)
         try:
             result = get_functional(command)(user_data)
